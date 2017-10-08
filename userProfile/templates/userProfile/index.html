@@ -2,7 +2,7 @@
 <h3>Albums :</h3>
 	<ul>
 		{% for album in allAlbums %}
-		<li><a href="{% url 'detail' album.id %}"> {{album.albumTitle}}</a></li>
+		<li><a href="{% url 'userProfile:detail' album.id %}"> {{album.albumTitle}}</a></li>
 		{% endfor %}
 	</ul>
 {% else %}
